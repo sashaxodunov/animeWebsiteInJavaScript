@@ -1,4 +1,4 @@
-const searchInput = modal.querySelector('#search-input')
+const searchInput = document.querySelector('#search-input')
 const modalInput = document.querySelector('.search-model')
 
 // search.addEventListener('input', (e) => {
@@ -7,10 +7,7 @@ const modalInput = document.querySelector('.search-model')
 
 searchInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
-    console.log(e.target.value)
     modalInput.style.display = 'none'
     searchInput.value = ''
   }
 })
-
-console.dir(searchInput)
