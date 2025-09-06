@@ -1,8 +1,8 @@
 const scrollToTop = () => {
-  const topBtn = document.getElementById('#scrollToTopButton')
+  const topBtn = document.querySelector('#scrollToTopButton')
 
   topBtn.addEventListener('click', (event) => {
-    event.preventDefault()
+    event.preventDefault
 
     seamless.scrollIntoView(document.querySelector('.header'), {
       behavior: 'smooth',
@@ -11,3 +11,5 @@ const scrollToTop = () => {
     })
   })
 }
+
+scrollToTop()
